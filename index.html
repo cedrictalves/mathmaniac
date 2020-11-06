@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATHMANIAC - THE GAME</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <div class="intro-container" id="intro-container">
+        <div class="intro">
+            <h1 class="logo">MATHMANIAC</h1><br>
+            <p id="introText">How good are you in mental math ?</p>
+            <button id="play">PLAY</button>
+        </div>
+    </div>
+    <div class="jeu-container" id="jeu-container">
+        <div class="jeu">
+            <h1 class="logo">MATHMANIAC</h1><br>
+            <strong id="score">Score : 0</strong><br>
+            <strong id="time">Time : <span id="timer"></span></strong>
+            <span>-------</span>
+            <p id="calc">Prepare !</p>
+            <p class="button" id="1"> x </p>
+            <p class="button" id="2"> x </p>
+            <p class="button" id="3"> x </p>
+        </div>
+    </div>
+    <intro class="lose-container" id="lose-container">
+        <div class="lose">
+            <h1 class="logo">MATHMANIAC</h1><br>
+            <h2>LOSER !</h2>
+            <span id="loseMessage"></span>
+            <button class="tryAgain" id="tryAgain">TRY AGAIN</button>
+            <span id="home">HOME <-</span>
+        </div>
+    </intro>
+    <script src="https://unpkg.com/@ionic/core@4.11.3/dist/ionic.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    color:rgb(250,250,250);
+}
+
+.logo{
+    font-size: 1.8rem;
+    text-decoration: underline;
+    /* transform: scaleY(2) translateY(-20px); */
+}
+
+.intro-container{
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    top:0;
+    left: 0; 
+    display: flex;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.intro{
+    width: 90%;
+    height: 60vh;
+    padding-top: -20px;
+    max-width: 450px;
+    max-height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro #introText{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.intro #play, #tryAgain{
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 1rem;
+    color:rgb(250,250,250);
+    box-shadow: 6px 0 rgb(250,250,250), -6px 0 rgb(250,250,250), 0 -6px rgb(250,250,250), 0 6px rgb(250,250,250);
+    outline:none;
+    border: none;
+    font-family : inherit;
+}
+
+.intro #play:active, #tryAgain:active{
+    background-color: rgba(68, 11, 100, 0.692);
+}
+
+
+#jeu-container{
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    top:0;
+    left: 0; 
+    display: none;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.jeu p:not(:first-of-type){
+    font-size: 2rem;
+    padding: .5rem;
+    width: 90%;
+    margin-top: .5rem;
+    box-shadow: 3px 0 rgb(250,250,250), -3px 0 rgb(250,250,250), 0 -3px rgb(250,250,250), 0 3px rgb(250,250,250);
+    background-color: rgba(3, 3, 3, 0.5);
+}
+
+.jeu p:first-of-type{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.jeu{
+    width: 90%;
+    height: 60vh;
+    max-width: 450px;
+    max-height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#loseMessage{
+    font-size: 1.5rem;
+    margin: 1rem;
+    line-height: 2rem;
+}
+
+
+#lose-container{
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    top:0;
+    left: 0; 
+    display: none;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.lose{
+    width: 90%;
+    height: 60vh;
+    max-width: 450px;
+    max-height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    user-select: none;
+}
