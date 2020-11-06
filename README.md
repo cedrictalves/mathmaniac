@@ -1,0 +1,2 @@
+# mathmaniac
+little javascript game
